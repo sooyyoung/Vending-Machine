@@ -22,52 +22,55 @@
   padding: 27px;
   background-color: #fff;
   box-sizing: border-box;
-  display:inline-block;
 }
 
 .drink-list {
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
 }
-.drink {
-  width: 94px;
-  height: 136px;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); 
-  box-sizing: border-box;
-  background-color: #fff;
+
+.drink-list li {
+  position: relative;
   border-radius: 10px;
-  text-align: center;
-  font-size: 9px;
-  float: left;
-  margin-right: 11px;
-  margin-bottom: 11px;
 }
-.drink:nth-child(3), .left .drink:nth-child(6) {
-  margin-right: 0;
+
+.drink-btn {
+  width: 94px;
+  padding: 10px 0 12px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
-.drink img {
-  margin-top: 11px;
+
+.drink-btn img {
   width: 36px;
 }
-.drink .cola-title {
-  margin: 6px 0; 
+
+.cola-title {
+  display: block;
+  font-size: 10px;
+  margin: 5px 0 7px;
 }
-.drink .price {
-  width: 73px;
-  line-height: 22px;
-  background-color: #6327fe;
-  color: #fff;
+
+.cola-price {
+  padding: 5px 12px;
   font-size: 12px;
+  color: #fff;
+  background-color: #6327fe;
   border-radius: 50px;
-  margin: 0 auto;
 }
-.choice {
-  border: 3px solid #6327fe;
+
+.drink-list li:active {
+  outline: 3px solid #6327fe;
   box-shadow: none;
 }
-.drink {
-  position: relative;
-  overflow: hidden;
+
+.soldout {
+  pointer-events: none;
 }
+
 .soldout::before {
   content: '';
   width: 100%;
@@ -75,9 +78,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url(images/soldout_bg.png);
-  background-size: cover;
-}
+  background: url(images/soldout.png) no-repeat center;
+  background-size: 60px 46px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+} 
+
+
+
 
 .balance {
   width: 100%; 
