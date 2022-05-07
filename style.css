@@ -44,7 +44,7 @@
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
-.drink-btn img {
+.cola-img {
   width: 36px;
 }
 
@@ -84,124 +84,95 @@
   border-radius: 10px;
 } 
 
-
-
-
-.balance {
-  width: 100%; 
+/* buy-cont */
+.buy-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
   font-size: 14px;
-  display: inline-block;
 }
+
 .balance-check {
-  width: 200px;
-  height: 33px;
+  grid-column: 1/3;
   background-color: #EAE8FE;
   border-radius: 5px;
-  box-sizing: border-box;
-  float: left;
-  margin-bottom: 10px;
   padding: 6px 10px;
 }
-.balance-check div {
-  width: 100%;
-  line-height: 24px;
-}
-.balance-check p {
-  float: left;
-}
-.balance-check span {
-  float: right;
-}
-.balance button {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-}
-.balance .return {
-  width: 94px;
-  height: 33px;
-  float: right;
-}
-.deposit {
-  width: 100%; 
-  height: 33px;
-  font-size: 14px;
-}
-.deposit-input {
-  width: 200px;
-  height: 33px;
-  padding: 6px 130px 6px 6px;
-  box-sizing: border-box;
-  margin-right: 5px;
-  border-radius: 5px;
-  border: 1px solid #c4c4c4;
-  color: #c4c4c4;
-}
-.deposit-btn {
-  width: 94px;
-  height: 33px;
-  box-sizing: border-box;
+
+.balance-txt {
   float: right;
 }
 
-.acquire {
-  width: 100%;
-  margin-top: 12px;
+.return-btn {
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
-.acquire-list {
-  width: 200px;
+
+.deposit-input {
+  grid-column: 1/3;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+}
+
+.deposit-btn {
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.drink-list-get {
+  grid-column: 1/3;
   height: 106px;
-  background-color: #EAE8FE;
+  padding: 12px;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
+  background-color: #EAE8FE;
   box-sizing: border-box;
-  float: left;
-  padding: 12px 18px 0 12px;
-  overflow: hidden;
+  overflow-y: scroll;
 }
-.acquire-list li {
-  width: 170px;
-  height: 46px;
-  background-color: #fff;
-  border-radius: 5px;
-  margin-bottom: 6px;
+
+.drink-list-get li+li {
+  margin-top: 8px;
+}
+
+.staged-btn {
   padding: 6px 8px;
-  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
   font-size: 9px;
-  position: relative;
 }
-.acquire-list li img {
+
+.item-img {
   width: 18px;
+  float: left;
+  margin-right: 10px;
 }
-.acquire-list li p {
-  display: inline-block;
-  position: absolute;
-  top: 18px;
-  left: 38px;
+
+.item-title {
+  float: left;
+  line-height: 33px;
 }
-.acquire-list li .num {
+
+.count-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
   width: 30px;
   height: 30px;
-  line-height: 30px;
-  border: 1px solid #c4c4c4;
-  box-sizing: border-box;
+  border: 1px solid #bdbdbd;
   border-radius: 5px;
   font-size: 14px;
-  font-weight: 500;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 132px;
-  margin-top: -15px;
 }
-.acquire button {
-  width: 94px;
+
+.get-btn {
   height: 106px;
-  background-color: #6327FE;
+  font-weight: bold;
   color: #fff;
+  background-color: #6327FE;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  font-weight: 700;
-  float: right;
 }
 
 /* info section */
