@@ -1,22 +1,23 @@
-/* header */
-.header {
-  width: 386px;
-  margin: 0 auto;
-  margin-bottom: 70px;
-}
-.header img {
-  width: 386px;
+.wrap {
+  display: flex;
+  justify-content: center;
+  gap: 0 30px;
+  padding-top: 250px;
 }
 
-/* container */
-.container {
-  width: 748px;
-  height: 100vh;
-  margin: 0 auto;
+/* logo */
+.logo {
+  position: absolute;
+  top:0;
+  width: 100%;
+  max-width: 386px;
+  height: 180px;
+  background: url(images/Logo_img.png) no-repeat center;
+  background-size: 100% 100%;
 }
 
-/* left section */
-.left {
+/* machine section */
+.machine {
   width: 360px;
   padding: 27px;
   background-color: #fff;
@@ -195,8 +196,8 @@
   float: right;
 }
 
-/* right section */
-.right {
+/* info section */
+.info {
   float: right;
 }
 
