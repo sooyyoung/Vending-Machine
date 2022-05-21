@@ -12,7 +12,7 @@
   width: 100%;
   max-width: 386px;
   height: 180px;
-  background: url(images/Logo_img.png) no-repeat center;
+  background: url(../images/Logo_img.png) no-repeat center;
   background-size: 100% 100%;
 }
 
@@ -78,7 +78,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: url(images/soldout.png) no-repeat center;
+  background: url(../images/soldout.png) no-repeat center;
   background-size: 60px 46px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
