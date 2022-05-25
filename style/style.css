@@ -1,5 +1,6 @@
 .wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 0 30px;
   padding-top: 250px;
@@ -220,4 +221,25 @@
   font-size: 12px;
   margin-top: 10px;
   float: right;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-color: #fff;
+  }
+
+  #wrap {
+    padding-top: 65px;
+  }
+
+  #wrap .logo {
+    width: 166px;
+    height: 70px;
+  }
+
+  .info .my-drink {
+    margin-top: 0;
+    padding: 31px 27px;
+  }
 }
